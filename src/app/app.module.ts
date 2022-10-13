@@ -7,12 +7,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './Components/header/header.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { ProductHeaderComponent } from './Pages/home/Components/product-header/product-header.component';
+import { FiltersComponent } from './Pages/home/Components/filters/filters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ProductHeaderComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
