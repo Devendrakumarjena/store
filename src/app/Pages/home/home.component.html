@@ -3,12 +3,12 @@
   [autosize]="true"
 >
   <mat-drawer mode="side" opened class="p-6">
-    <app-filters></app-filters>
+    <app-filters (showCategory)="onShowCategory($event)"></app-filters>
   </mat-drawer>
   <mat-drawer-content class="p-6">
     <app-product-header
       (columnsCountChange)="onColumnsCountChange($event)"
     ></app-product-header>
-    {{ cols }}
+    {{ category }}
   </mat-drawer-content>
 </mat-drawer-container>
